@@ -12,8 +12,11 @@ $arv = 0;
 if($arv > 0) {
   // kui arv ON suurem kui 0
   echo $arv.' on positiivne<br>';
-} else {
-  // muidu - kui arv EI OLE suurem 0
+} else if($arv < 0) {
+  // muidu - kui arv ON väiksem 0
   echo $arv.' on negatiivne<br>';
+} else {
+  // muidu - kui arv EI OLE suurem 0 ja EI OLE väiksem kui 0
+  echo $arv.' on null<br>';
 }
 echo 'see on programmi lõpp';
