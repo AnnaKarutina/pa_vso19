@@ -7,9 +7,11 @@
 // defineeri muutujad ja omista väärtused
 $ringiRaadius = 5;
 // arvutame pindala ja ümbermõõt
-$ringiPindala = 3.14 * ($ringiRaadius * $ringiRaadius);
-$ringiUmbermoot = 3.14 * 2 * $ringiRaadius;
+$ringiPindala = pi() * ($ringiRaadius * $ringiRaadius);
+$ringiUmbermoot = pi() * 2 * $ringiRaadius;
 // väljastamine
 echo 'Ringi raadius = '.$ringiRaadius.'<br>';
-echo 'Ringi pindala = '.$ringiPindala.'<br>';
-echo 'Ringi ümbermõõt = '.$ringiUmbermoot.'<br>';
+//echo 'Ringi pindala = '.$ringiPindala.'<br>';
+printf('Ringi pindala = %.3f<br>', $ringiPindala);
+//echo 'Ringi ümbermõõt = '.$ringiUmbermoot.'<br>';
+printf('Ringi ümbermõõt = %.3f<br>', $ringiUmbermoot);
