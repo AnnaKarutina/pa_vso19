@@ -6,7 +6,7 @@ $veergudeArv = 7;
 for($reaNr = 1; $reaNr <= $ridadeArv; $reaNr++){
 	echo $reaNr;
 	// veergude määrame ja vahetus
-	for($veeruNr = 1; $veeruNr <= $veergudeArv; $veeruNr++){
+	for($veeruNr = 1; $veeruNr <= $reaNr; $veeruNr++){
 		echo '*';
 	}
 	echo '<br>';
